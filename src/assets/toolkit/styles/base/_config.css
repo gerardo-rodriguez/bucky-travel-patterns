@@ -1,0 +1,125 @@
+/**
+ * POSTCSS plugins
+ *
+ * https://github.com/postcss/postcss/blob/master/docs/plugins.md
+ */
+
+@use postcss-mixins;
+@use postcss-cssnext;
+
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+
+  /* Primary colors */
+  --color-orange: #f26941;
+  --color-navy: #0f1c3f;
+  --color-gray: #dbe5ea;
+
+  /* Secondary colors */
+  /*--color-green: #35c98d;*/
+  /*--color-fuchsia: #f14ca3;*/
+
+  /* Other colors */
+  /*--color-red: #bf0000;*/
+
+  /* a11y variations for light-on-dark text contrast */
+  /*--color-blue-a11y: color(var(--color-blue) l(-4%));*/
+  /*--color-fuchsia-a11y: color(var(--color-fuchsia) l(-14%) s(-5%));*/
+}
+
+/**
+ * Modular Scale
+ *
+ * Define a modular scale for a consistent rhythm in
+ * sizing and spacing of elements
+ *
+ * http://www.modularscale.com/?1&em&1.25&web&text
+ */
+
+@import "css-modularscale";
+
+:root {
+  --ms-ratio: var(--major-third);
+  --ms-base: 1;
+}
+
+/**
+ * Spacing
+ */
+
+:root {
+  --space-xs: calc(var(--ms-1) / 1rem);
+  --space-sm: calc(var(--ms0) * 1rem);
+  --space-md: calc(var(--ms1) * 1rem);
+  --space-lg: calc(var(--ms2) * 1rem);
+}
+
+/**
+ * Base
+ */
+
+:root {
+  --base-background: var(--color-white);
+  --base-color: var(--color-black);
+  --base-font: var(--font-size-sm)/var(--line-height-lg) var(--font-family-default);
+  --base-margin: var(--space-md);
+}
+
+/**
+ * Typography
+ */
+
+:root {
+  --font-size-xs: calc(var(--ms-1) * 1em);
+  --font-size-sm: calc(var(--ms0) * 1em);
+  --font-size-md: calc(var(--ms1) * 1em);
+  --font-size-lg: calc(var(--ms2) * 1em);
+  --font-size-xl: calc(var(--ms3) * 1em);
+
+  --font-family-default: 'Merriweather', serif;
+
+  --font-weight-normal: 400;
+  --font-weight-semibold: 700;
+  --font-weight-bold: 900;
+
+  --line-height-xs: var(--ms0);
+  --line-height-sm: var(--ms1);
+  --line-height-md: var(--ms2);
+  --line-height-lg: var(--ms3);
+
+  --heading-font: var(--font-weight-semibold) var(--font-size-sm) var(--font-family-default);
+
+  /*--code-font: var(--font-size-sm) var(--font-family-mono);*/
+}
+
+/**
+ * Lists
+ */
+
+:root {
+  --list-style-default: disc;
+  --list-style-numeric: decimal;
+  --list-marker-padding: var(--space-md);
+}
+
+/**
+ * Selectors
+ */
+
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+@custom-selector :--lists ul, ol, dl;
+@custom-selector :--monospaced pre, code, kbd, samp, var;
+@custom-selector :--enter :hover, :focus;
+
+/**
+ * Breakpoints
+ */
+
+/* min-width */
+@custom-media --sm-viewport (width >= 30em);
+@custom-media --md-viewport (width >= 48em);
+@custom-media --lg-viewport (width >= 64em);
+@custom-media --xl-viewport (width >= 80em);
+@custom-media --xxl-viewport (width >= 100em);
+@custom-media --xxxl-viewport (width >= 120em);
