@@ -13,19 +13,11 @@
 
   /* Primary colors */
   --color-orange: #f26941;
-  --color-navy: #0f1c3f;
-  --color-gray: #dbe5ea;
+  --color-gray: #777;
 
   /* Secondary colors */
-  /*--color-green: #35c98d;*/
-  /*--color-fuchsia: #f14ca3;*/
 
   /* Other colors */
-  /*--color-red: #bf0000;*/
-
-  /* a11y variations for light-on-dark text contrast */
-  /*--color-blue-a11y: color(var(--color-blue) l(-4%));*/
-  /*--color-fuchsia-a11y: color(var(--color-fuchsia) l(-14%) s(-5%));*/
 }
 
 /**
@@ -53,17 +45,9 @@
   --space-sm: calc(var(--ms0) * 1rem);
   --space-md: calc(var(--ms1) * 1rem);
   --space-lg: calc(var(--ms2) * 1rem);
-}
-
-/**
- * Base
- */
-
-:root {
-  --base-background: var(--color-white);
-  --base-color: var(--color-black);
-  --base-font: var(--font-size-sm)/var(--line-height-lg) var(--font-family-default);
-  --base-margin: var(--space-md);
+  --space-xl: calc(var(--ms3) * 1rem);
+  --space-xxl: calc(var(--ms4) * 1rem);
+  --space-xxxl: calc(var(--ms5) * 1rem);
 }
 
 /**
@@ -91,6 +75,17 @@
   --heading-font: var(--font-weight-semibold) var(--font-size-sm) var(--font-family-default);
 
   /*--code-font: var(--font-size-sm) var(--font-family-mono);*/
+}
+
+/**
+ * Base
+ */
+
+:root {
+  --base-background: var(--color-white);
+  --base-color: var(--color-black);
+  --base-font: var(--font-size-sm)/var(--line-height-lg) var(--font-family-default);
+  --base-margin: var(--space-md);
 }
 
 /**

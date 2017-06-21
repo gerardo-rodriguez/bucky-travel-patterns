@@ -11,6 +11,13 @@
 }*/
 
 /**
+ * Font text color
+ */
+.u-textGray {
+  color: var(--color-gray);
+}
+
+/**
  * Font weight control
  */
 

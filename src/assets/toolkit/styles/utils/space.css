@@ -6,11 +6,11 @@
   }
 }
 
-@define-mixin makeStaggerItemsUtils $value, $suffix {
+/*@define-mixin makeStaggerItemsUtils $value, $suffix {
   .u-staggerItems$(suffix) > * + * {
     margin-top: $(value) !important;
   }
-}
+}*/
 
 @define-mixin makePullUtils $value, $suffix, $prefix {
   .u-$(prefix)pullSides$(suffix),

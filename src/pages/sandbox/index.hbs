@@ -1,0 +1,13 @@
+---
+title: Sandbox
+notes: |
+  A sandbox to try things.
+---
+
+<h1>{{title}}</h1>
+
+<p>These are some designs.</p>
+
+{{#each (pages "sandbox" ignore="index")}}
+  {{> drizzle.page-item }}
+{{/each}}

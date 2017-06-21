@@ -1,0 +1,26 @@
+{{#extend "blank"}}
+  {{#content "head" mode="append"}}
+    <link rel="stylesheet"   href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,900">
+    <link rel="stylesheet" href="{{@root.baseurl}}/assets/toolkit/styles/toolkit.css">
+    {{#block "stylesheets"}}
+      {{#each stylesheets}}
+        <link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/{{this}}.css">
+      {{/each}}
+    {{/block}}
+  {{/content}}
+
+  {{#content "header"}}
+    {{!--<header class="u-bgOrange u-textCenter">
+      <img src="/images/bhs-logo.png" alt="Beaverton High School">
+    </header>--}}
+  {{/content}}
+
+  {{#content "body"}}
+
+    {{#block "main"}}{{/block}}
+  {{/content}}
+
+  {{#content "foot"}}
+    <script src="{{@root.baseurl}}/assets/toolkit/scripts/toolkit.js"></script>
+  {{/content}}
+{{/extend}}

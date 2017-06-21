@@ -1,12 +1,8 @@
 brand:
   - color: "#001F3F"
     property: "--color-navy"
-  - color: "#0074D9"
-    property: "--color-blue"
-  - color: "#7FDBFF"
-    property: "--color-aqua"
-  - color: "#39CCCC"
-    property: "--color-teal"
+  - color: "#f26941"
+    property: "--color-orange"
 
 grays:
   - color: "#111111"

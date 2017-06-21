@@ -2,10 +2,10 @@
  * Toolkit Styles
  */
 
-@import "suitcss-base";
-@import "suitcss-components-button";
-@import "suitcss-components-grid";
+/*@import "suitcss-components-button";*/
 @import "./base/index.css";
+@import "./components/index.css";
+@import "./utils/index.css";
 
 @import "suitcss-utils";
 /* Import more stuff here. */

@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@cloudfour/gulp-tasks": "^2.0.1",
-    "@cloudfour/hbs-helpers": "^0.6.1",
+    "@cloudfour/hbs-helpers": "^0.9.0",
     "babel-core": "^6.7.6",
     "babel-eslint": "^6.0.2",
     "babel-loader": "^6.2.4",
@@ -41,6 +41,7 @@
     "gulp-gh-pages": "^0.5.4",
     "gulp-util": "^3.0.7",
     "postcss-cssnext": "^2.5.2",
+    "postcss-mixins": "^5.4.1",
     "prismjs": "^1.4.1",
     "suitcss-base": "^2.0.0",
     "suitcss-components-arrange": "^1.1.1",
@@ -55,6 +56,7 @@
     "docs": "doctoc --title \"### Contents\" --maxlevel 2 docs/README.md"
   },
   "dependencies": {
-    "css-modularscale": "^1.1.1"
+    "css-modularscale": "^1.1.1",
+    "suitcss-utils-text": "^1.0.0"
   }
 }

@@ -1,0 +1,58 @@
+---
+layout: toolkit.default
+title: A visit to Baylor University
+notes: Design for single blog post.
+stylesheets:
+  - sandbox/post-single
+---
+
+<article class="u-containBasic u-spaceItems1 u-padSides1 u-padEnds4">
+  <header class="u-spaceItems02 Post-header">
+    <h1>{{title}}</h1>
+    <p class="u-spaceItems06 u-textShrink1 Post-byline">
+      Published by <span class="u-textSemibold">Mrs. Perez</span> on <time class="u-textNoWrap" datetime="2017-04-12">{{random "month"}} 22, 2017</time><!--, <span class="u-textNoWrap u-textGray">~12 minute read</span>-->
+
+    </p>
+  </header>
+
+  <div class="u-release u-spaceTop2 u-md-spaceTop4">
+    <figure class="Figure">
+      <img src="/images/baylor-university.jpg" alt="">
+      <figcaption class="Figure-caption">Baylor University Campus</figcaption>
+    </figure>
+  </div>
+
+  <div class="Post-content u-spaceItems1 u-spaceTop3 u-md-spaceTop5">
+    <h2>The resident honors program</h2>
+
+    <p>I have a student in the <a href="#">Resident Honors Program</a> this year at USC. What is unique about this program is that she was able to find her college fit a year before her high school peers. This early entrance program allowed her to enter college after her junior year of high school; the perfect opportunity for the student who has outgrown high school and possesses the academic and social maturity to tackle the opportunities of college. When I saw her on campus, I knew she had made the right decision. She loves it!</p>
+
+    <h2>Studying abroad before setting foot on campus</h2>
+
+    <p>
+      {{random "paragraph"}}
+    </p>
+
+    <p>
+      {{random "paragraph"}}
+    </p>
+
+    <h2>In summary</h2>
+
+    <p>
+      {{random "paragraph"}}
+    </p>
+  </div>
+
+  <footer>
+    <ul class="u-listInline">
+      {{#iterate 6}}
+      <li>
+        <a class="Card-metaLink" href="#">
+          #{{random "word"}}
+        </a>
+      </li>
+      {{/iterate}}
+    </ul>
+  </footer>
+</article>

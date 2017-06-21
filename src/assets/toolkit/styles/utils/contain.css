@@ -3,7 +3,7 @@
  * https://github.com/cloudfour/cloudfour.com-patterns/blob/master/src/assets/toolkit/styles/utils/contain.css
  */
 .u-containBasic {
-  max-width: 40rem; /* ~ 640 @ 16px base */
+  max-width: 44rem; /* ~ 704 @ 16px base */
   margin-left: auto !important;
   margin-right: auto !important;
 }

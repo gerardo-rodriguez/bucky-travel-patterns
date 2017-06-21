@@ -1,2 +1,3 @@
-@import "./config.css";
+@import "./_config.css";
+@import "./base.css";
 @import "./typography.css";

@@ -1,0 +1,14 @@
+:root {
+  --post-content-pre-heading: var(--space-xxxl);
+}
+
+.Post {}
+.Post-header {}
+.Post-byline {
+  line-height: var(--line-height-md);
+}
+
+.Post-content {}
+.Post-content > * + h2 {
+  margin-top: var(--post-content-pre-heading) !important;
+}

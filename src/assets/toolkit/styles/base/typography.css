@@ -1,13 +1,73 @@
-html {
-  line-height: 1.5;
-}
+
 
 :any-link {
-  color: var(--color-blue);
+  color: var(--color-orange);
 }
 
-@media (--lg-viewport) {
-  body {
-    font-size: 1.2em;
+@media (--sm-viewport) {
+  html {
+    /*font-size: calc(var(--ms1) * 1rem);*/
   }
+}
+
+/**
+ * Body type styles
+ *
+ * 1. Base font style for everything
+ * 2. Allow long words (links) to brake at arbitrary points
+ * 3. Prevent automatic size adjustments on orientation change
+ */
+
+body {
+  font: var(--base-font); /* 1 */
+  word-wrap: break-word; /* 2 */
+  text-size-adjust: none; /* 3 */
+}
+
+/**
+ * Headings
+ */
+
+:--headings {
+  font: var(--heading-font);
+}
+
+/**
+ * Largest and smallest default heading sizes
+ */
+
+h1 {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-sm);
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-sm);
+}
+
+h3 {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-sm);
+}
+
+/**
+ * Lists
+ */
+
+:--lists {
+  list-style-position: outside;
+}
+
+ol,
+ul {
+  padding: 0 0 0 var(--list-marker-padding);
+}
+
+ul {
+  list-style-type: var(--list-style-default);
+}
+
+ol {
+  list-style-type: var(--list-style-numeric);
 }
